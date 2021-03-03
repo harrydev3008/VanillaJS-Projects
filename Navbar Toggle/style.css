@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('./bg.jpeg') center/cover no-repeat fixed;
+}
+
+.container {
+    max-width: 1366px;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav-bar {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    height: 100%;
+}
+
+.nav-links a {
+    display: inline-block;
+    height: 100%;
+    color: #fff;
+    padding: 0 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    line-height: 60px;
+    border-radius: 5px;
+}
+
+.nav-links .active,
+.logo span{
+    color: #4cd137;
+}
+
+.nav-links a:hover{
+    background: #4cd137;
+    color: #fff;
+}
+
+#navbar-toggle {
+    display: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 769px) {
+    #navbar-toggle {
+        display: inline-block;
+    }
+
+    .navbar-toggle-close i::before {
+        content: "\f00d";
+    }
+
+    .nav-links {
+        height: 0;
+        overflow: hidden;
+        transition: height .3s linear;
+        left: 0;
+        top: 100%;
+        position: absolute;
+        flex-direction: column;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+        width: 100%;
+    }
+
+    .nav-links-show {
+        height: 180px;
+    }
+
+    .nav-links a {
+        transition: all .3s ease;
+    }
+    
+    .nav-links .active {
+        color: #fff;
+    }
+
+    .nav-links a:hover{
+        transform: translateX(10%);
+        background: transparent;
+        color: #4cd137;
+    }
+}
