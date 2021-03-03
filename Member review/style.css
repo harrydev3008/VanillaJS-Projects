@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primaryColor: #56aaff;
+}
+
+body {
+    width: 100%;
+    max-width: 1366px;
+    height: 100vh;
+    background: #f2f2f2;
+}
+
+.container {
+    width: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.right {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    color: var(--primaryColor);
+    font-size: 5rem;
+    opacity: .15;
+    pointer-events: none;
+}
+
+.img-container {
+    position: relative;
+    padding: 1rem 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.img-container::before {
+    content: "";
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: var(--primaryColor);
+    position: absolute;
+    transform: translate(6%, -4%);
+    z-index: -1;
+}
+
+.img-container .quote {
+    content: "";
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--primaryColor);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-190%, 50%);
+    z-index: 2;
+}
+
+.img-container .quote i {
+    line-height: 35px;
+    color: #fff;
+}
+
+img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.member-name {
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.member-job {
+    color: var(--primaryColor);
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    word-wrap: break-word;
+}
+
+.member-info {
+    padding: .25rem 2rem;
+    color: #474747;
+}
+
+.member-info i {
+    margin: 0 .2rem;
+}
+
+.btn-container {
+    padding: .5rem 0;
+}
+
+.btn {
+    cursor: pointer;
+    background: none;
+    padding: .25em 1.5em;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--primaryColor);
+    border-radius: 10px;
+}
+
+@media (max-width: 769px) {
+    .container {
+        width: 90%;
+    }
+}
