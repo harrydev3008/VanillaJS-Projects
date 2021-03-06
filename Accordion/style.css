@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordion {
+    margin: .5rem 0;
+    width: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    
+}
+
+.accordion__title {
+    background-color: #00a8ff;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+}
+
+.accordion__icon i{
+    font-size: 1.3rem;
+    transition: transform .3s ease;
+}
+
+.accordion__icon i:hover {
+    cursor: pointer;
+}
+
+.accordion .btn-minus {
+    display: none;
+}
+
+.accordion.show-text .btn-minus {
+    display: block;
+}
+
+.accordion.show-text .btn-plus {
+    display: none;
+}
+
+.accordion.show-text .close-content {
+    display: block;
+}
+.accordion .accordion__content {
+    max-height: 0;
+    transition: max-height  .3s ease;
+    overflow: hidden;
+}
+
+.accordion .accordion__content p {
+    padding: .5rem 1rem;
+
+}
+
+.accordion.show-text .accordion__content{
+    max-height: 20vh;
+}
