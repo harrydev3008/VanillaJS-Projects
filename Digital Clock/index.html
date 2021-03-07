@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Clock</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="clock">
+            <div class="clock__content">
+                <p class="days">
+                    <span id="mon">mon</span>
+                    <span id="tue">tue</span>
+                    <span id="wed">wed</span>
+                    <span id="thu">thu</span>
+                    <span id="fri">fri</span>
+                    <span id="sat">sat</span>
+                    <span id="sun">sun</span>
+                </p>
+
+                <p class="time">
+                    <span id="hour"></span> : <span id="minute"></span> : <span id="second"></span>
+                </p>
+
+                <p id="date">
+                    <span id="cal">
+                        <i class="far fa-calendar-alt"></i>
+                    </span>
+
+                    <span id="month"></span>
+                    <span id="date-of-month"></span>
+                    <span id="year"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
