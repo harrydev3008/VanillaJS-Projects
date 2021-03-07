@@ -2,7 +2,7 @@ const months = ["Dec", "Jan", "Feb", "Mar", "Apr", "May", "June",
     "July", "Aug", "Sep", "Oct", "Nov"
 ];
 
-const dates = ["sun", "mon", "tue", "wed", "thu",
+const dates = ["sun", "mon", "tue", "wed", "thur",
     "fri", "sat"
 ];
 
