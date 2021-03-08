@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --primary-color: #dcdde1;
+    --secondary-color: #777;
+    --clockwise-color: #e74c3c;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary-color);
+}
+
+.analog-clock {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background: url('./clock.png') center/cover;
+    object-fit: contain; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -4px -12px 12px rgba(255, 255, 255, 0.05),
+                inset -4px -10px 12px rgba(255, 255, 255, 0.05),
+                4px 12px 12px rgba(0, 0, 0, 0.3),
+                inset 4px 10px 12px rgba(0, 0, 0, 0.3);
+
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.analog-clock::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    z-index: 10;
+}
+
+.analog-clock .hour, .analog-clock .minute, .analog-clock .second {
+    position: absolute;
+}
+
+.analog-clock .hour, .hour-clockwise {
+    width: 160px;
+    height: 160px;
+}
+.analog-clock .minute, .minute-clockwise {
+    width: 190px;
+    height: 190px;
+}
+.analog-clock .second, .second-clockwise {
+    width: 230px;
+    height: 230px;
+}
+
+.hour-clockwise, .minute-clockwise, .second-clockwise {
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.hour-clockwise::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    border-radius: 6px;
+    height: 60%;
+    background-color: var(--clockwise-color);
+    z-index: 2;
+}
+
+.minute-clockwise::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    border-radius: 8px;
+    height: 60%;
+    background-color: var(--secondary-color);
+    z-index: 3;
+}
+
+.second-clockwise::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    border-radius: 6px;
+    height: 65%;
+    background-color: var(--secondary-color);
+    z-index: 4;
+} 
+
+.background-toggle-container {
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+#mode {
+    margin-left: .5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #777;
+}
+
+#background-toggle {
+    cursor: pointer;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    appearance: none;
+    background-color: rgb(180, 180, 180);
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    transition: background-color .5s ease;
+}
+
+#background-toggle:checked {
+    background-color: #47525f;
+}
+
+#background-toggle::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+#background-toggle:checked::before {
+    left: 50%;
+    background-color: #00a8ff;
+}

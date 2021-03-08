@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Analog Clock</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="background-toggle-container">
+            <input type="checkbox" id="background-toggle">
+            <span id="mode">Light Mode</span>
+        </div>
+
+        <div class="analog-clock">
+
+            <div class="hour" id="hour">
+                <div class="hour-clockwise" id="hour-clockwise"></div>
+            </div>
+
+            <div class="minute" id="minute">
+                <div class="minute-clockwise" id="minute-clockwise"></div>
+            </div>
+
+            <div class="second" id="second">
+                <div class="second-clockwise" id="second-clockwise"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
