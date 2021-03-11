@@ -7,3 +7,4 @@
 | 3 | [Progress Steps](https://github.com/nubmaster-69/VanillaJS-Projects/tree/master/Progress%20Steps) | [Click me!](https://vigorous-mccarthy-d52ac2.netlify.app/) |
 | 4 | [Hidden Search Box](https://github.com/nubmaster-69/VanillaJS-Projects/tree/master/Hidden%20Search%20Box) | [Click me!](https://elegant-snyder-e65672.netlify.app/) |
 | 5 | [Sidebar Drawer](https://github.com/nubmaster-69/VanillaJS-Projects/tree/master/Sidebar%20Drawer) | [Click me!](https://gracious-mahavira-6cebab.netlify.app/) |
+| 5 | [Notes](https://github.com/nubmaster-69/VanillaJS-Projects/tree/master/Notes) | [Click me!](https://festive-keller-27ca24.netlify.app/) |
