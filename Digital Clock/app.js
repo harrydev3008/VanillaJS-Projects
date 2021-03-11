@@ -1,5 +1,5 @@
-const months = ["Dec", "Jan", "Feb", "Mar", "Apr", "May", "June",
-    "July", "Aug", "Sep", "Oct", "Nov"
+const months = ["Jan", "Feb", "Mar", "Apr", "May", "June",
+    "July", "Aug", "Sep", "Oct", "Nov", "Dec"
 ];
 
 const dates = ["sun", "mon", "tue", "wed", "thur",
