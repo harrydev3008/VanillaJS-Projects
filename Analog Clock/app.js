@@ -8,10 +8,12 @@ const bgToggle = document.querySelector('#background-toggle');
 const curMode = document.querySelector('#mode');
 
 setInterval(() => {
+
     let curDate = new Date();
     let curHour = curDate.getHours() * 30;
     let curMinute = curDate.getMinutes() * deg;
     let curSecond = curDate.getSeconds() * deg;
+
     hourClockwise.style.transform = `rotateZ(${(curHour) + (curMinute / 12)}deg)`;
     minuteClockwise.style.transform = `rotateZ(${curMinute}deg)`;
     secondClockwise.style.transform = `rotateZ(${curSecond}deg)`;
@@ -28,4 +30,9 @@ bgToggle.addEventListener('click', () => {
         curMode.style.color = '#777';
         document.documentElement.style.setProperty('--primary-color', '#dcdde1');
     }
+})
+
+window.addEventListener('load', () => {
+    if (new Date().getHours() >= 20)
+        bgToggle.click();
 })

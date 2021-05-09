@@ -12,18 +12,17 @@
 }
 
 body {
-    width: 100%;
     max-width: 1366px;
     height: 100vh;
     background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
     width: 50%;
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: #fff;
     text-align: center;
     border-radius: 10px;
