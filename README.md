@@ -13,4 +13,5 @@
 | 9 | [Image Zooom Effect](https://github.com/nubmaster-69/VanillaJS-Projects/tree/master/Image%20Zoom%20Effect) | [Click me!](https://reverent-galileo-5b49d6.netlify.app/) |
 | 10 | [Color Generator](https://github.com/nubmaster-69/VanillaJS-Projects/tree/master/Color%20Generator) | [Click me!](https://nifty-allen-3ada06.netlify.app/) |
 | 11 | [Slider](https://github.com/nubmaster-69/VanillaJS-Projects/tree/master/Slider) | [Click me!](https://compassionate-spence-66dc03.netlify.app/) |
-| 12 | [Accordion](https://github.com/nubmaster-69/VanillaJS-Projects/tree/master/Accordion) | [Click me!](https://peaceful-franklin-7cfa40.netlify.app/) |
+| 12 | [Accordion](https://github.com/nubmaster-69/VanillaJS-Projects/tree/master/Accordion) | [Click me!](https://peaceful-franklin-7cfa40.netlify.app/)|
+| 13 | [Kanto Pokedex](https://github.com/nubmaster-69/VanillaJS-Projects/tree/master/Kanto%20Pokedex) | [Click me!](https://romantic-snyder-bd67d9.netlify.app/)|
