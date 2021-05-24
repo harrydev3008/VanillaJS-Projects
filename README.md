@@ -15,4 +15,4 @@
 | 11 | [Slider](https://github.com/nubmaster-69/VanillaJS-Projects/tree/master/Slider) | [Click me!](https://compassionate-spence-66dc03.netlify.app/) |
 | 12 | [Accordion](https://github.com/nubmaster-69/VanillaJS-Projects/tree/master/Accordion) | [Click me!](https://peaceful-franklin-7cfa40.netlify.app/)|
 | 13 | [Kanto Pokédex](https://github.com/nubmaster-69/VanillaJS-Projects/tree/master/Kanto%20Pokedex) | [Click me!](https://romantic-snyder-bd67d9.netlify.app/)|
-| 14 | [Text To QRCode](https://github.com/nubmaster-69/VanillaJS-Projects/tree/master/Text%20To%20QRCodex) | [Click me!](https://confident-wozniak-f16b3c.netlify.app/)|
+| 14 | [Text To QRCode](https://github.com/nubmaster-69/VanillaJS-Projects/tree/master/Text%20To%20QRCode) | [Click me!](https://confident-wozniak-f16b3c.netlify.app/)|
