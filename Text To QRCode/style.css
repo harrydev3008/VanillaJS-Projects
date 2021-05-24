@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    background: linear-gradient(#00012ef0, #01033d8a),
+    url('./qrcode.jpg') center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+input {
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 30%;
+    background: #ffffff26;
+    padding: .5rem .45rem;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+}
+
+input::placeholder {
+    color: #9e9e9e;
+}
+
+.btn-generate {
+    border: none;
+    background: #30336b;
+    padding: .5rem .75rem;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.qrcode-modal {
+    display: none;
+    width: 100%;
+    position: fixed;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.qrcode-modal.active, .loading-data.active {
+    display: flex;
+}
+
+.loading-data {
+    display: none;
+    width: 100%;
+    position: fixed;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#00012ef0, #01033d8a);
+}
+
+.loading-data.active #loading {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(231, 231, 231);
+    border-radius: 50%;
+    border-left: 3px solid #01033d8a;
+    animation: load 1.5s ease-in-out infinite;
+}
+
+.qrcode-container {
+    height: 50vh;
+    color: #fff;
+    width: 50%;
+    background: #eee;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qrcode-container img {
+    width: 180px;
+    height: 180px;
+}
+
+.btn-close {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    background: none;
+    color: #00012ef0;
+    transition: transform .3s ease;
+}
+
+.btn-close:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media (max-width:541px) {
+    .qrcode-container {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    input {
+        width: 80%;
+    }
+}
+
+@keyframes load {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

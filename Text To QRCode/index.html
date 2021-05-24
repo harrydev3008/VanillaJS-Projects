@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <title>Text To QRCode</title>
+</head>
+
+<body>
+    <div class="qrcode-modal">
+        <div class="qrcode-container">
+            <img src="./qrcode.jpg" alt="Your QRCode image ;)" id="qrcode-img">
+            <button class="btn-close fas fa-times"></button>
+        </div>
+    </div>
+
+    <div class="loading-data">
+        <span id="loading"></span>
+    </div>
+
+    <div class="container">
+        <h1 class="title">Text To QRCode</h1>
+        <input type="text" id="text" placeholder="Paste your text!">
+        <button class="btn-generate">Generate</button>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
