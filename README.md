@@ -16,3 +16,4 @@
 | 12 | [Kanto Pokédex](https://github.com/nubmaster-69/VanillaJS-Projects/tree/master/Kanto%20Pokedex) | [Click me!](https://romantic-snyder-bd67d9.netlify.app/)|
 | 13 | [Text To QRCode](https://github.com/nubmaster-69/VanillaJS-Projects/tree/master/Text%20To%20QRCode) | [Click me!](https://confident-wozniak-f16b3c.netlify.app/)|
 | 14 | [Ripple Button](https://github.com/nubmaster-69/VanillaJS-Projects/tree/master/Ripple%20Button) | [Click me!](https://elastic-mayer-2707d0.netlify.app/)|
+| 15 | [Typing Game](https://github.com/nubmaster-69/VanillaJS-Projects/tree/master/Simple%20Typing%20Game) | [Click me!](https://tender-liskov-b196cc.netlify.app/)|

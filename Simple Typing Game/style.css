@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f6f6f7;
+    color: #444;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.text {
+    display: none;
+}
+
+.text.start-game {
+    display: block;
+    font-size: 1.75rem;
+    letter-spacing: 1px;    
+}
+
+button {
+    border: none;
+    background: #444;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button.close, #reload {
+    display: none;
+}
+
+button.close ~ #reload {
+    display: block;
+    position: fixed;
+    font-size: 2rem;
+    cursor: pointer;
+    top: 20px;
+    right: 40px;
+}
+
+span.wrong {
+    color: #e84118;
+}
+
+span.wrong-space {
+    background-color: #e84118;
+}
+
+span.correct {
+    color: #44bd32;
+}
+
+span.cursor {
+    background: rgb(134, 134, 134);
+    color: #fff;
+}
+
+#result {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.res {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.res .title{
+    padding: 20px;
+    font-size: 2rem;
+    background: #fff;
+    color: #333;
+    margin-bottom: .5rem;
+    border-radius: 10px;
+    text-align: center;
+}
