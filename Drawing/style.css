@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f2f2f2;
+}
+
+.canvas {
+    border: 1px solid #ee5253;
+    cursor: pointer;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.canvas.active {
+    cursor: url('./clear2.png'), auto;
+}
+
+.function {
+    width: 1024px;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.function label, .function i {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.function i {
+    color: teal;
+}
+
+.function button {
+    border: none;
+    background: none;
+    outline: none;
+    color: teal;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+input[type="color"] {
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+p {
+    text-align: center;
+    margin-top: 1rem;
+    color: #828385;
+    user-select: none;
+}

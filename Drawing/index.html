@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="icon" href="./icon.png">
+    <title>Drawing</title>
+</head>
+
+<body>
+    <div class="function">
+        <i class="fas fa-paint-brush" id="draw"></i>
+        <input type="color" id="colorPicker">
+        <label for="colorPicker" class="fas fa-palette"></label>
+        <button class="fas fa-eraser" id="clear"></button>
+    </div>
+    <canvas class="canvas" width="1024px" height="600px">Opps... Your browser doesn't support canvas :(</canvas>
+    <p>
+        Press <i class="fas fa-arrow-up"></i> or <i class="fas fa-arrow-down"></i> to increase or decrease pen/eraser
+        size
+        <br>
+        Press Del to clear board
+    </p>
+    <script src="./app.js"></script>
+</body>
+
+</html>
